@@ -215,83 +215,83 @@ declare global {
 // for type re-export
 declare global {
   // @ts-ignore
-  export type { OAuthAuth0Config } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/auth0.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/auth0.d.ts')
+  export type { OAuthAuth0Config } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/auth0.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/auth0.d.ts')
   // @ts-ignore
-  export type { OAuthBattledotnetConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/battledotnet.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/battledotnet.d.ts')
+  export type { OAuthBattledotnetConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/battledotnet.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/battledotnet.d.ts')
   // @ts-ignore
-  export type { OAuthCognitoConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/cognito.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/cognito.d.ts')
+  export type { OAuthCognitoConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/cognito.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/cognito.d.ts')
   // @ts-ignore
-  export type { OAuthDiscordConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/discord.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/discord.d.ts')
+  export type { OAuthDiscordConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/discord.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/discord.d.ts')
   // @ts-ignore
-  export type { OAuthDropboxConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/dropbox.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/dropbox.d.ts')
+  export type { OAuthDropboxConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/dropbox.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/dropbox.d.ts')
   // @ts-ignore
-  export type { OAuthFacebookConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/facebook.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/facebook.d.ts')
+  export type { OAuthFacebookConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/facebook.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/facebook.d.ts')
   // @ts-ignore
-  export type { OAuthGitHubConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/github.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/github.d.ts')
+  export type { OAuthGitHubConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/github.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/github.d.ts')
   // @ts-ignore
-  export type { OAuthGitLabConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/gitlab.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/gitlab.d.ts')
+  export type { OAuthGitLabConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/gitlab.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/gitlab.d.ts')
   // @ts-ignore
-  export type { OAuthGoogleConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/google.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/google.d.ts')
+  export type { OAuthGoogleConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/google.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/google.d.ts')
   // @ts-ignore
-  export type { OAuthInstagramConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/instagram.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/instagram.d.ts')
+  export type { OAuthInstagramConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/instagram.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/instagram.d.ts')
   // @ts-ignore
-  export type { OAuthKeycloakConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/keycloak.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/keycloak.d.ts')
+  export type { OAuthKeycloakConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/keycloak.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/keycloak.d.ts')
   // @ts-ignore
-  export type { OAuthLinearConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/linear.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/linear.d.ts')
+  export type { OAuthLinearConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/linear.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/linear.d.ts')
   // @ts-ignore
-  export type { OAuthLinkedInConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/linkedin.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/linkedin.d.ts')
+  export type { OAuthLinkedInConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/linkedin.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/linkedin.d.ts')
   // @ts-ignore
-  export type { OAuthMicrosoftConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/microsoft.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/microsoft.d.ts')
+  export type { OAuthMicrosoftConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/microsoft.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/microsoft.d.ts')
   // @ts-ignore
-  export type { OAuthPaypalConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/paypal.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/paypal.d.ts')
+  export type { OAuthPaypalConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/paypal.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/paypal.d.ts')
   // @ts-ignore
-  export type { OAuthPolarConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/polar.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/polar.d.ts')
+  export type { OAuthPolarConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/polar.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/polar.d.ts')
   // @ts-ignore
-  export type { OAuthSpotifyConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/spotify.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/spotify.d.ts')
+  export type { OAuthSpotifyConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/spotify.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/spotify.d.ts')
   // @ts-ignore
-  export type { OAuthSteamConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/steam.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/steam.d.ts')
+  export type { OAuthSteamConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/steam.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/steam.d.ts')
   // @ts-ignore
-  export type { OAuthTikTokConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/tiktok.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/tiktok.d.ts')
+  export type { OAuthTikTokConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/tiktok.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/tiktok.d.ts')
   // @ts-ignore
-  export type { OAuthTwitchConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/twitch.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/twitch.d.ts')
+  export type { OAuthTwitchConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/twitch.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/twitch.d.ts')
   // @ts-ignore
-  export type { OAuthVKConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/vk.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/vk.d.ts')
+  export type { OAuthVKConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/vk.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/vk.d.ts')
   // @ts-ignore
-  export type { OAuthXConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/x.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/x.d.ts')
+  export type { OAuthXConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/x.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/x.d.ts')
   // @ts-ignore
-  export type { OAuthXSUAAConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/xsuaa.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/xsuaa.d.ts')
+  export type { OAuthXSUAAConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/xsuaa.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/xsuaa.d.ts')
   // @ts-ignore
-  export type { OAuthYandexConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/yandex.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/yandex.d.ts')
+  export type { OAuthYandexConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/yandex.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/yandex.d.ts')
   // @ts-ignore
-  export type { OAuthZitadelConfig } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/zitadel.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/zitadel.d.ts')
+  export type { OAuthZitadelConfig } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/zitadel.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/lib/oauth/zitadel.d.ts')
   // @ts-ignore
-  export type { SessionHooks } from 'C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/utils/session.d.ts'
-  import('C:/Users/11/Desktop/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/utils/session.d.ts')
+  export type { SessionHooks } from 'C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/utils/session.d.ts'
+  import('C:/Users/11/Documents/inventario/node_modules/nuxt-auth-utils/dist/runtime/server/utils/session.d.ts')
   // @ts-ignore
   export type { FormularioActualizacionUsuario, FormularioActualizacionEstado, FormularioActualizacionSubCategoria, FormularioActualizacionCategoria, FormularioActualizacionFechaDevolucion } from '../../server/utils/schemas/general'
   import('../../server/utils/schemas/general')

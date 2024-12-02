@@ -3,34 +3,34 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, createError, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getRequestHeaders, appendHeaders, isPreflightRequest, useSession, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getRouterParam, getQuery as getQuery$1, readBody, readValidatedBody, getValidatedRouterParams, getResponseStatusText } from 'file://C:/Users/11/Desktop/inventario/node_modules/h3/dist/index.mjs';
-import * as v from 'file://C:/Users/11/Desktop/inventario/node_modules/valibot/dist/index.js';
-import { PrismaClient } from 'file://C:/Users/11/Desktop/inventario/node_modules/@prisma/client/default.js';
-import { Hash } from 'file://C:/Users/11/Desktop/inventario/node_modules/@adonisjs/hash/build/index.js';
-import { Scrypt } from 'file://C:/Users/11/Desktop/inventario/node_modules/@adonisjs/hash/build/src/drivers/scrypt.js';
-import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file://C:/Users/11/Desktop/inventario/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { stringify, uneval } from 'file://C:/Users/11/Desktop/inventario/node_modules/devalue/index.js';
-import destr from 'file://C:/Users/11/Desktop/inventario/node_modules/destr/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, joinRelativeURL } from 'file://C:/Users/11/Desktop/inventario/node_modules/ufo/dist/index.mjs';
-import { renderToString } from 'file://C:/Users/11/Desktop/inventario/node_modules/vue/server-renderer/index.mjs';
-import { propsToString, renderSSRHead } from 'file://C:/Users/11/Desktop/inventario/node_modules/@unhead/ssr/dist/index.mjs';
-import { createFetch as createFetch$1, Headers as Headers$1 } from 'file://C:/Users/11/Desktop/inventario/node_modules/ofetch/dist/node.mjs';
-import { createCall, createFetch } from 'file://C:/Users/11/Desktop/inventario/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file://C:/Users/11/Desktop/inventario/node_modules/hookable/dist/index.mjs';
-import { klona } from 'file://C:/Users/11/Desktop/inventario/node_modules/klona/dist/index.mjs';
-import { snakeCase } from 'file://C:/Users/11/Desktop/inventario/node_modules/scule/dist/index.mjs';
-import defu, { defuFn, defu as defu$1 } from 'file://C:/Users/11/Desktop/inventario/node_modules/defu/dist/defu.mjs';
-import { hash } from 'file://C:/Users/11/Desktop/inventario/node_modules/ohash/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file://C:/Users/11/Desktop/inventario/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://C:/Users/11/Desktop/inventario/node_modules/unstorage/drivers/fs.mjs';
-import { toRouteMatcher, createRouter } from 'file://C:/Users/11/Desktop/inventario/node_modules/radix3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, createError, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getRequestHeaders, appendHeaders, isPreflightRequest, useSession, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getRouterParam, getQuery as getQuery$1, readBody, readValidatedBody, getValidatedRouterParams, getResponseStatusText } from 'file://C:/Users/11/Documents/inventario/node_modules/h3/dist/index.mjs';
+import * as v from 'file://C:/Users/11/Documents/inventario/node_modules/valibot/dist/index.js';
+import { PrismaClient } from 'file://C:/Users/11/Documents/inventario/node_modules/@prisma/client/default.js';
+import { Hash } from 'file://C:/Users/11/Documents/inventario/node_modules/@adonisjs/hash/build/index.js';
+import { Scrypt } from 'file://C:/Users/11/Documents/inventario/node_modules/@adonisjs/hash/build/src/drivers/scrypt.js';
+import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file://C:/Users/11/Documents/inventario/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { stringify, uneval } from 'file://C:/Users/11/Documents/inventario/node_modules/devalue/index.js';
+import destr from 'file://C:/Users/11/Documents/inventario/node_modules/destr/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, joinRelativeURL } from 'file://C:/Users/11/Documents/inventario/node_modules/ufo/dist/index.mjs';
+import { renderToString } from 'file://C:/Users/11/Documents/inventario/node_modules/vue/server-renderer/index.mjs';
+import { propsToString, renderSSRHead } from 'file://C:/Users/11/Documents/inventario/node_modules/@unhead/ssr/dist/index.mjs';
+import { createFetch as createFetch$1, Headers as Headers$1 } from 'file://C:/Users/11/Documents/inventario/node_modules/ofetch/dist/node.mjs';
+import { createCall, createFetch } from 'file://C:/Users/11/Documents/inventario/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file://C:/Users/11/Documents/inventario/node_modules/hookable/dist/index.mjs';
+import { klona } from 'file://C:/Users/11/Documents/inventario/node_modules/klona/dist/index.mjs';
+import { snakeCase } from 'file://C:/Users/11/Documents/inventario/node_modules/scule/dist/index.mjs';
+import defu, { defuFn, defu as defu$1 } from 'file://C:/Users/11/Documents/inventario/node_modules/defu/dist/defu.mjs';
+import { hash } from 'file://C:/Users/11/Documents/inventario/node_modules/ohash/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file://C:/Users/11/Documents/inventario/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://C:/Users/11/Documents/inventario/node_modules/unstorage/drivers/fs.mjs';
+import { toRouteMatcher, createRouter } from 'file://C:/Users/11/Documents/inventario/node_modules/radix3/dist/index.mjs';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { consola } from 'file://C:/Users/11/Desktop/inventario/node_modules/consola/dist/index.mjs';
-import { getContext } from 'file://C:/Users/11/Desktop/inventario/node_modules/unctx/dist/index.mjs';
-import { captureRawStackTrace, parseRawStackTrace } from 'file://C:/Users/11/Desktop/inventario/node_modules/errx/dist/index.js';
-import { isVNode, version, unref } from 'file://C:/Users/11/Desktop/inventario/node_modules/vue/index.mjs';
-import { createServerHead as createServerHead$1, CapoPlugin } from 'file://C:/Users/11/Desktop/inventario/node_modules/unhead/dist/index.mjs';
-import { defineHeadPlugin } from 'file://C:/Users/11/Desktop/inventario/node_modules/@unhead/shared/dist/index.mjs';
+import { consola } from 'file://C:/Users/11/Documents/inventario/node_modules/consola/dist/index.mjs';
+import { getContext } from 'file://C:/Users/11/Documents/inventario/node_modules/unctx/dist/index.mjs';
+import { captureRawStackTrace, parseRawStackTrace } from 'file://C:/Users/11/Documents/inventario/node_modules/errx/dist/index.js';
+import { isVNode, version, unref } from 'file://C:/Users/11/Documents/inventario/node_modules/vue/index.mjs';
+import { createServerHead as createServerHead$1, CapoPlugin } from 'file://C:/Users/11/Documents/inventario/node_modules/unhead/dist/index.mjs';
+import { defineHeadPlugin } from 'file://C:/Users/11/Documents/inventario/node_modules/@unhead/shared/dist/index.mjs';
 
 const r=Object.create(null),E=e=>globalThis.process?.env||globalThis._importMeta_.env||globalThis.Deno?.env.toObject()||globalThis.__env__||(e?r:globalThis),s=new Proxy(r,{get(e,o){return E()[o]??r[o]},has(e,o){const i=E();return o in i||o in r},set(e,o,i){const g=E(!0);return g[o]=i,!0},deleteProperty(e,o){if(!o)return !1;const i=E(!0);return delete i[o],!0},ownKeys(){const e=E(!0);return Object.keys(e)}}),t=typeof process<"u"&&process.env&&"development"||"",p=[["APPVEYOR"],["AWS_AMPLIFY","AWS_APP_ID",{ci:!0}],["AZURE_PIPELINES","SYSTEM_TEAMFOUNDATIONCOLLECTIONURI"],["AZURE_STATIC","INPUT_AZURE_STATIC_WEB_APPS_API_TOKEN"],["APPCIRCLE","AC_APPCIRCLE"],["BAMBOO","bamboo_planKey"],["BITBUCKET","BITBUCKET_COMMIT"],["BITRISE","BITRISE_IO"],["BUDDY","BUDDY_WORKSPACE_ID"],["BUILDKITE"],["CIRCLE","CIRCLECI"],["CIRRUS","CIRRUS_CI"],["CLOUDFLARE_PAGES","CF_PAGES",{ci:!0}],["CODEBUILD","CODEBUILD_BUILD_ARN"],["CODEFRESH","CF_BUILD_ID"],["DRONE"],["DRONE","DRONE_BUILD_EVENT"],["DSARI"],["GITHUB_ACTIONS"],["GITLAB","GITLAB_CI"],["GITLAB","CI_MERGE_REQUEST_ID"],["GOCD","GO_PIPELINE_LABEL"],["LAYERCI"],["HUDSON","HUDSON_URL"],["JENKINS","JENKINS_URL"],["MAGNUM"],["NETLIFY"],["NETLIFY","NETLIFY_LOCAL",{ci:!1}],["NEVERCODE"],["RENDER"],["SAIL","SAILCI"],["SEMAPHORE"],["SCREWDRIVER"],["SHIPPABLE"],["SOLANO","TDDIUM"],["STRIDER"],["TEAMCITY","TEAMCITY_VERSION"],["TRAVIS"],["VERCEL","NOW_BUILDER"],["VERCEL","VERCEL",{ci:!1}],["VERCEL","VERCEL_ENV",{ci:!1}],["APPCENTER","APPCENTER_BUILD_ID"],["CODESANDBOX","CODESANDBOX_SSE",{ci:!1}],["STACKBLITZ"],["STORMKIT"],["CLEAVR"],["ZEABUR"],["CODESPHERE","CODESPHERE_APP_ID",{ci:!0}],["RAILWAY","RAILWAY_PROJECT_ID"],["RAILWAY","RAILWAY_SERVICE_ID"]];function B(){if(globalThis.process?.env)for(const e of p){const o=e[1]||e[0];if(globalThis.process?.env[o])return {name:e[0].toLowerCase(),...e[2]}}return globalThis.process?.env?.SHELL==="/bin/jsh"&&globalThis.process?.versions?.webcontainer?{name:"stackblitz",ci:!1}:{name:"",ci:!1}}const l=B(),d=l.name;function n(e){return e?e!=="false":!1}const I=globalThis.process?.platform||"",T=n(s.CI)||l.ci!==!1,R=n(globalThis.process?.stdout&&globalThis.process?.stdout.isTTY);n(s.DEBUG);const C=t==="test"||n(s.TEST);n(s.MINIMAL)||T||C||!R;const a=/^win/i.test(I);!n(s.NO_COLOR)&&(n(s.FORCE_COLOR)||(R||a)&&s.TERM!=="dumb"||T);const _=(globalThis.process?.versions?.node||"").replace(/^v/,"")||null;Number(_?.split(".")[0])||null;const W=globalThis.process||Object.create(null),c={versions:{}};new Proxy(W,{get(e,o){if(o==="env")return s;if(o in e)return e[o];if(o in c)return c[o]}});const A=globalThis.process?.release?.name==="node",L=!!globalThis.Bun||!!globalThis.process?.versions?.bun,D=!!globalThis.Deno,O=!!globalThis.fastly,S=!!globalThis.Netlify,N=!!globalThis.EdgeRuntime,u=globalThis.navigator?.userAgent==="Cloudflare-Workers",b=!!globalThis.__lagon__,F=[[S,"netlify"],[N,"edge-light"],[u,"workerd"],[O,"fastly"],[D,"deno"],[L,"bun"],[A,"node"],[b,"lagon"]];function G(){const e=F.find(o=>o[0]);if(e)return {name:e[1]}}const P=G();P?.name||"";
 
@@ -304,7 +304,7 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
   }
 });
 
-const serverAssets = [{"baseName":"server","dir":"C:/Users/11/Desktop/inventario/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"C:/Users/11/Documents/inventario/server/assets"}];
 
 const assets = createStorage();
 
@@ -316,11 +316,11 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\11\\Desktop\\inventario","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\11\\Desktop\\inventario\\server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\11\\Desktop\\inventario\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\11\\Desktop\\inventario\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\11\\Desktop\\inventario\\.data\\kv","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\11\\Documents\\inventario","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\11\\Documents\\inventario\\server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\11\\Documents\\inventario\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\11\\Documents\\inventario\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\11\\Documents\\inventario\\.data\\kv","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -770,13 +770,13 @@ if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
 window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 `;
 
-const _TQ6nSBT0wM = (function(nitro) {
+const _Yrb4TwTFi0 = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
-const rootDir = "C:/Users/11/Desktop/inventario";
+const rootDir = "C:/Users/11/Documents/inventario";
 
 const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
 
@@ -795,7 +795,7 @@ const devReducers = {
   URL: (data) => data instanceof URL ? data.toString() : void 0
 };
 const asyncContext = getContext("nuxt-dev", { asyncContext: true, AsyncLocalStorage });
-const _w9ZbnbQa9C = (nitroApp) => {
+const _y4voQcxMqW = (nitroApp) => {
   const handler = nitroApp.h3App.handler;
   nitroApp.h3App.handler = (event) => {
     return asyncContext.callAsync({ logs: [], event }, () => handler(event));
@@ -936,7 +936,7 @@ function defineRenderHandler(handler) {
   });
 }
 
-const _YL2SbCL9xR = defineNitroPlugin((nitroApp) => {
+const _AWkaKVteGN = defineNitroPlugin((nitroApp) => {
   if (process.env.NUXT_OAUTH_FACEBOOK_CLIENT_ID && process.env.NUXT_OAUTH_FACEBOOK_CLIENT_SECRET || process.env.NUXT_OAUTH_INSTAGRAM_CLIENT_ID && process.env.NUXT_OAUTH_INSTAGRAM_CLIENT_SECRET) {
     nitroApp.hooks.hook("render:html", (html) => {
       html.head.unshift(`
@@ -953,9 +953,9 @@ const _YL2SbCL9xR = defineNitroPlugin((nitroApp) => {
 });
 
 const plugins = [
-  _TQ6nSBT0wM,
-_w9ZbnbQa9C,
-_YL2SbCL9xR
+  _Yrb4TwTFi0,
+_y4voQcxMqW,
+_AWkaKVteGN
 ];
 
 const errorHandler = (async function errorhandler(error, event) {
@@ -1018,7 +1018,7 @@ const errorHandler = (async function errorhandler(error, event) {
   return send(event, html);
 });
 
-const _TK01Vh = defineEventHandler((event) => {
+const _xw6Oza = defineEventHandler((event) => {
   appendHeaders(event, {
     "Access-Control-Allow-Origin": "*",
     // Permite que cualquier origen realice solicitudes a la API.
@@ -2817,12 +2817,12 @@ function _useSession(event, config = {}) {
   return useSession(event, finalConfig);
 }
 
-const _iI8R57 = eventHandler(async (event) => {
+const _KPx4Io = eventHandler(async (event) => {
   await clearUserSession(event);
   return { loggedOut: true };
 });
 
-const _Tty72v = eventHandler(async (event) => {
+const _JmLQtM = eventHandler(async (event) => {
   const session = await getUserSession(event);
   if (Object.keys(session).length > 0) {
     await sessionHooks.callHookParallel("fetch", session, event);
@@ -2831,136 +2831,136 @@ const _Tty72v = eventHandler(async (event) => {
   return data;
 });
 
-const _lazy_wmYVgA = () => Promise.resolve().then(function () { return index_get$B; });
-const _lazy_M8E1KG = () => Promise.resolve().then(function () { return index$d; });
-const _lazy_cnqhYw = () => Promise.resolve().then(function () { return index$b; });
-const _lazy_3XCH1q = () => Promise.resolve().then(function () { return index$9; });
-const _lazy_tKM2Rm = () => Promise.resolve().then(function () { return _id__delete$f; });
-const _lazy_wfE5yC = () => Promise.resolve().then(function () { return _id__patch$j; });
-const _lazy_r0EyIU = () => Promise.resolve().then(function () { return index_get$z; });
-const _lazy_VcKvGq = () => Promise.resolve().then(function () { return index_post$p; });
-const _lazy_seQtlU = () => Promise.resolve().then(function () { return _id__delete$d; });
-const _lazy_nJb9Zp = () => Promise.resolve().then(function () { return _id__patch$h; });
-const _lazy_Oli3d0 = () => Promise.resolve().then(function () { return index_get$x; });
-const _lazy_34gdtr = () => Promise.resolve().then(function () { return index_post$n; });
-const _lazy_5Vg2ZL = () => Promise.resolve().then(function () { return index$7; });
-const _lazy_29ylJP = () => Promise.resolve().then(function () { return _id__get$7; });
-const _lazy_RW8ROo = () => Promise.resolve().then(function () { return index$5; });
-const _lazy_VQyw2X = () => Promise.resolve().then(function () { return index_get$v; });
-const _lazy_OX73bu = () => Promise.resolve().then(function () { return _id__delete$b; });
-const _lazy_N8jJ9v = () => Promise.resolve().then(function () { return _id__patch$f; });
-const _lazy_dDsGpN = () => Promise.resolve().then(function () { return index_get$t; });
-const _lazy_60tcV0 = () => Promise.resolve().then(function () { return index_post$l; });
-const _lazy_lWWMzq = () => Promise.resolve().then(function () { return _id__delete$9; });
-const _lazy_V9Qaxv = () => Promise.resolve().then(function () { return _id__patch$d; });
-const _lazy_Rtune6 = () => Promise.resolve().then(function () { return index_get$r; });
-const _lazy_qkmCJD = () => Promise.resolve().then(function () { return index_post$j; });
-const _lazy_1YXfrk = () => Promise.resolve().then(function () { return _id__delete$7; });
-const _lazy_Dfzeds = () => Promise.resolve().then(function () { return _id__patch$b; });
-const _lazy_Ni5BpQ = () => Promise.resolve().then(function () { return index_post$h; });
-const _lazy_h3F1DH = () => Promise.resolve().then(function () { return _id__patch$9; });
-const _lazy_FbXxC1 = () => Promise.resolve().then(function () { return index_get$p; });
-const _lazy_k1ugHT = () => Promise.resolve().then(function () { return index_post$f; });
-const _lazy_7ZPuZ2 = () => Promise.resolve().then(function () { return index_post$d; });
-const _lazy_ceH20o = () => Promise.resolve().then(function () { return index_get$n; });
-const _lazy_AneSvm = () => Promise.resolve().then(function () { return _id__get$5; });
-const _lazy_Gh1PhN = () => Promise.resolve().then(function () { return _id__get$3; });
-const _lazy_7R4a0a = () => Promise.resolve().then(function () { return index_get$l; });
-const _lazy_ufjbwz = () => Promise.resolve().then(function () { return index_post$b; });
-const _lazy_TuqqVL = () => Promise.resolve().then(function () { return index_post$9; });
-const _lazy_frPBXY = () => Promise.resolve().then(function () { return _id__get$1; });
-const _lazy_JIqadr = () => Promise.resolve().then(function () { return index_get$j; });
-const _lazy_zcEjLo = () => Promise.resolve().then(function () { return index_get$h; });
-const _lazy_RoSw25 = () => Promise.resolve().then(function () { return _id__delete$5; });
-const _lazy_1st5J5 = () => Promise.resolve().then(function () { return _id__patch$7; });
-const _lazy_qy3zBN = () => Promise.resolve().then(function () { return index_get$f; });
-const _lazy_uvpcLu = () => Promise.resolve().then(function () { return index_post$7; });
-const _lazy_7Ztg85 = () => Promise.resolve().then(function () { return index_get$d; });
-const _lazy_8MCmJn = () => Promise.resolve().then(function () { return index_get$b; });
-const _lazy_4dPX76 = () => Promise.resolve().then(function () { return index_get$9; });
-const _lazy_ILgKao = () => Promise.resolve().then(function () { return index_get$7; });
-const _lazy_AQUUSp = () => Promise.resolve().then(function () { return index$3; });
-const _lazy_5zxAfB = () => Promise.resolve().then(function () { return _id__delete$3; });
-const _lazy_J0ufST = () => Promise.resolve().then(function () { return _id__patch$5; });
-const _lazy_0qY4iH = () => Promise.resolve().then(function () { return index_get$5; });
-const _lazy_cyVUs4 = () => Promise.resolve().then(function () { return index_post$5; });
-const _lazy_erKCdG = () => Promise.resolve().then(function () { return _id__delete$1; });
-const _lazy_alhIrf = () => Promise.resolve().then(function () { return _id__patch$3; });
-const _lazy_aiGrp2 = () => Promise.resolve().then(function () { return index_get$3; });
-const _lazy_UPp9nN = () => Promise.resolve().then(function () { return index_post$3; });
-const _lazy_dYUt8v = () => Promise.resolve().then(function () { return _id__patch$1; });
-const _lazy_QdZDqn = () => Promise.resolve().then(function () { return index$1; });
-const _lazy_ppP7Zk = () => Promise.resolve().then(function () { return index_get$1; });
-const _lazy_LQpxyo = () => Promise.resolve().then(function () { return index_post$1; });
-const _lazy_9HkuKp = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_Irph24 = () => Promise.resolve().then(function () { return index_get$B; });
+const _lazy_vXHFUu = () => Promise.resolve().then(function () { return index$d; });
+const _lazy_gdt0Vf = () => Promise.resolve().then(function () { return index$b; });
+const _lazy_9Ir05Z = () => Promise.resolve().then(function () { return index$9; });
+const _lazy_W9730v = () => Promise.resolve().then(function () { return _id__delete$f; });
+const _lazy_DvUHv9 = () => Promise.resolve().then(function () { return _id__patch$j; });
+const _lazy_Vwkxnc = () => Promise.resolve().then(function () { return index_get$z; });
+const _lazy_Fk5zDG = () => Promise.resolve().then(function () { return index_post$p; });
+const _lazy_xXGWPa = () => Promise.resolve().then(function () { return _id__delete$d; });
+const _lazy_CDCW5Z = () => Promise.resolve().then(function () { return _id__patch$h; });
+const _lazy_knDnMX = () => Promise.resolve().then(function () { return index_get$x; });
+const _lazy_uKNbzk = () => Promise.resolve().then(function () { return index_post$n; });
+const _lazy_eu0CyY = () => Promise.resolve().then(function () { return index$7; });
+const _lazy_Ckz5XS = () => Promise.resolve().then(function () { return _id__get$7; });
+const _lazy_4crMYl = () => Promise.resolve().then(function () { return index$5; });
+const _lazy_yClJUP = () => Promise.resolve().then(function () { return index_get$v; });
+const _lazy_2njpjV = () => Promise.resolve().then(function () { return _id__delete$b; });
+const _lazy_cImE94 = () => Promise.resolve().then(function () { return _id__patch$f; });
+const _lazy_tXBpxT = () => Promise.resolve().then(function () { return index_get$t; });
+const _lazy_dAUOqF = () => Promise.resolve().then(function () { return index_post$l; });
+const _lazy_f5dSr0 = () => Promise.resolve().then(function () { return _id__delete$9; });
+const _lazy_q4QUYb = () => Promise.resolve().then(function () { return _id__patch$d; });
+const _lazy_L0zpyE = () => Promise.resolve().then(function () { return index_get$r; });
+const _lazy_1OFEGX = () => Promise.resolve().then(function () { return index_post$j; });
+const _lazy_ecHEMF = () => Promise.resolve().then(function () { return _id__delete$7; });
+const _lazy_oz4htm = () => Promise.resolve().then(function () { return _id__patch$b; });
+const _lazy_fA17FC = () => Promise.resolve().then(function () { return index_post$h; });
+const _lazy_TzzfBF = () => Promise.resolve().then(function () { return _id__patch$9; });
+const _lazy_lNNVnt = () => Promise.resolve().then(function () { return index_get$p; });
+const _lazy_FaWihv = () => Promise.resolve().then(function () { return index_post$f; });
+const _lazy_PEubJv = () => Promise.resolve().then(function () { return index_post$d; });
+const _lazy_JEqGrt = () => Promise.resolve().then(function () { return index_get$n; });
+const _lazy_JodVNe = () => Promise.resolve().then(function () { return _id__get$5; });
+const _lazy_q1t37x = () => Promise.resolve().then(function () { return _id__get$3; });
+const _lazy_N5yFjW = () => Promise.resolve().then(function () { return index_get$l; });
+const _lazy_fS75f4 = () => Promise.resolve().then(function () { return index_post$b; });
+const _lazy_MPtZqN = () => Promise.resolve().then(function () { return index_post$9; });
+const _lazy_URC6Ln = () => Promise.resolve().then(function () { return _id__get$1; });
+const _lazy_yJ9sfK = () => Promise.resolve().then(function () { return index_get$j; });
+const _lazy_UstDGm = () => Promise.resolve().then(function () { return index_get$h; });
+const _lazy_aWip3d = () => Promise.resolve().then(function () { return _id__delete$5; });
+const _lazy_rzNJGd = () => Promise.resolve().then(function () { return _id__patch$7; });
+const _lazy_AECvVp = () => Promise.resolve().then(function () { return index_get$f; });
+const _lazy_qNffzh = () => Promise.resolve().then(function () { return index_post$7; });
+const _lazy_DYtCbi = () => Promise.resolve().then(function () { return index_get$d; });
+const _lazy_xDkwd0 = () => Promise.resolve().then(function () { return index_get$b; });
+const _lazy_8HzzBo = () => Promise.resolve().then(function () { return index_get$9; });
+const _lazy_ddj6QK = () => Promise.resolve().then(function () { return index_get$7; });
+const _lazy_NCyhyl = () => Promise.resolve().then(function () { return index$3; });
+const _lazy_LHm7LR = () => Promise.resolve().then(function () { return _id__delete$3; });
+const _lazy_VP0LAr = () => Promise.resolve().then(function () { return _id__patch$5; });
+const _lazy_iFQqFo = () => Promise.resolve().then(function () { return index_get$5; });
+const _lazy_CWEdcA = () => Promise.resolve().then(function () { return index_post$5; });
+const _lazy_tH5Idz = () => Promise.resolve().then(function () { return _id__delete$1; });
+const _lazy_i3g7fE = () => Promise.resolve().then(function () { return _id__patch$3; });
+const _lazy_xbztDl = () => Promise.resolve().then(function () { return index_get$3; });
+const _lazy_C3WUBx = () => Promise.resolve().then(function () { return index_post$3; });
+const _lazy_hlf23o = () => Promise.resolve().then(function () { return _id__patch$1; });
+const _lazy_dPMLhN = () => Promise.resolve().then(function () { return index$1; });
+const _lazy_BoEiSj = () => Promise.resolve().then(function () { return index_get$1; });
+const _lazy_hYKLA4 = () => Promise.resolve().then(function () { return index_post$1; });
+const _lazy_1RlprV = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '', handler: _TK01Vh, lazy: false, middleware: true, method: undefined },
-  { route: '/api/alertas', handler: _lazy_wmYVgA, lazy: true, middleware: false, method: "get" },
-  { route: '/api/auth/cambiarPass', handler: _lazy_M8E1KG, lazy: true, middleware: false, method: undefined },
-  { route: '/api/auth/crear-cuenta', handler: _lazy_cnqhYw, lazy: true, middleware: false, method: undefined },
-  { route: '/api/auth/login', handler: _lazy_3XCH1q, lazy: true, middleware: false, method: undefined },
-  { route: '/api/categoria/:id', handler: _lazy_tKM2Rm, lazy: true, middleware: false, method: "delete" },
-  { route: '/api/categoria/:id', handler: _lazy_wfE5yC, lazy: true, middleware: false, method: "patch" },
-  { route: '/api/categoria', handler: _lazy_r0EyIU, lazy: true, middleware: false, method: "get" },
-  { route: '/api/categoria', handler: _lazy_VcKvGq, lazy: true, middleware: false, method: "post" },
-  { route: '/api/estadoConservacion/:id', handler: _lazy_seQtlU, lazy: true, middleware: false, method: "delete" },
-  { route: '/api/estadoConservacion/:id', handler: _lazy_nJb9Zp, lazy: true, middleware: false, method: "patch" },
-  { route: '/api/estadoConservacion', handler: _lazy_Oli3d0, lazy: true, middleware: false, method: "get" },
-  { route: '/api/estadoConservacion', handler: _lazy_34gdtr, lazy: true, middleware: false, method: "post" },
-  { route: '/api/estados', handler: _lazy_5Vg2ZL, lazy: true, middleware: false, method: undefined },
-  { route: '/api/exportarPdf/:id', handler: _lazy_29ylJP, lazy: true, middleware: false, method: "get" },
-  { route: '/api/fecha', handler: _lazy_RW8ROo, lazy: true, middleware: false, method: undefined },
-  { route: '/api/idProducto', handler: _lazy_VQyw2X, lazy: true, middleware: false, method: "get" },
-  { route: '/api/nivelEducativo/:id', handler: _lazy_OX73bu, lazy: true, middleware: false, method: "delete" },
-  { route: '/api/nivelEducativo/:id', handler: _lazy_N8jJ9v, lazy: true, middleware: false, method: "patch" },
-  { route: '/api/nivelEducativo', handler: _lazy_dDsGpN, lazy: true, middleware: false, method: "get" },
-  { route: '/api/nivelEducativo', handler: _lazy_60tcV0, lazy: true, middleware: false, method: "post" },
-  { route: '/api/procedencia/:id', handler: _lazy_lWWMzq, lazy: true, middleware: false, method: "delete" },
-  { route: '/api/procedencia/:id', handler: _lazy_V9Qaxv, lazy: true, middleware: false, method: "patch" },
-  { route: '/api/procedencia', handler: _lazy_Rtune6, lazy: true, middleware: false, method: "get" },
-  { route: '/api/procedencia', handler: _lazy_qkmCJD, lazy: true, middleware: false, method: "post" },
-  { route: '/api/productos/:id', handler: _lazy_1YXfrk, lazy: true, middleware: false, method: "delete" },
-  { route: '/api/productos/:id', handler: _lazy_Dfzeds, lazy: true, middleware: false, method: "patch" },
-  { route: '/api/productos/agregarStock', handler: _lazy_Ni5BpQ, lazy: true, middleware: false, method: "post" },
-  { route: '/api/productos/asignarResponsable/:id', handler: _lazy_h3F1DH, lazy: true, middleware: false, method: "patch" },
-  { route: '/api/productos/asignarResponsable', handler: _lazy_FbXxC1, lazy: true, middleware: false, method: "get" },
-  { route: '/api/productos/asignarResponsable', handler: _lazy_k1ugHT, lazy: true, middleware: false, method: "post" },
-  { route: '/api/productos/asignarSala', handler: _lazy_7ZPuZ2, lazy: true, middleware: false, method: "post" },
-  { route: '/api/productos/editar', handler: _lazy_ceH20o, lazy: true, middleware: false, method: "get" },
-  { route: '/api/productos/filtrarSala/:id', handler: _lazy_AneSvm, lazy: true, middleware: false, method: "get" },
-  { route: '/api/productos/filtrarSala/filtrarSalaEditar/:id', handler: _lazy_Gh1PhN, lazy: true, middleware: false, method: "get" },
-  { route: '/api/productos', handler: _lazy_7R4a0a, lazy: true, middleware: false, method: "get" },
-  { route: '/api/productos', handler: _lazy_ufjbwz, lazy: true, middleware: false, method: "post" },
-  { route: '/api/productos/nuevoProducto', handler: _lazy_TuqqVL, lazy: true, middleware: false, method: "post" },
-  { route: '/api/productos/obtenerProductosDevolucion/:id', handler: _lazy_frPBXY, lazy: true, middleware: false, method: "get" },
-  { route: '/api/productos/obtenerProductosSelect', handler: _lazy_JIqadr, lazy: true, middleware: false, method: "get" },
-  { route: '/api/productos/obtenerProductosTotales', handler: _lazy_zcEjLo, lazy: true, middleware: false, method: "get" },
-  { route: '/api/proveedores/:id', handler: _lazy_RoSw25, lazy: true, middleware: false, method: "delete" },
-  { route: '/api/proveedores/:id', handler: _lazy_1st5J5, lazy: true, middleware: false, method: "patch" },
-  { route: '/api/proveedores', handler: _lazy_qy3zBN, lazy: true, middleware: false, method: "get" },
-  { route: '/api/proveedores', handler: _lazy_uvpcLu, lazy: true, middleware: false, method: "post" },
-  { route: '/api/reportes/obtenerTotales', handler: _lazy_7Ztg85, lazy: true, middleware: false, method: "get" },
-  { route: '/api/reportes/productoMasUtilizado', handler: _lazy_8MCmJn, lazy: true, middleware: false, method: "get" },
-  { route: '/api/reportes/productoResponsable', handler: _lazy_4dPX76, lazy: true, middleware: false, method: "get" },
-  { route: '/api/reportes/productoSala', handler: _lazy_ILgKao, lazy: true, middleware: false, method: "get" },
-  { route: '/api/roles', handler: _lazy_AQUUSp, lazy: true, middleware: false, method: undefined },
-  { route: '/api/salas/:id', handler: _lazy_5zxAfB, lazy: true, middleware: false, method: "delete" },
-  { route: '/api/salas/:id', handler: _lazy_J0ufST, lazy: true, middleware: false, method: "patch" },
-  { route: '/api/salas', handler: _lazy_0qY4iH, lazy: true, middleware: false, method: "get" },
-  { route: '/api/salas', handler: _lazy_cyVUs4, lazy: true, middleware: false, method: "post" },
-  { route: '/api/subCategoria/:id', handler: _lazy_erKCdG, lazy: true, middleware: false, method: "delete" },
-  { route: '/api/subCategoria/:id', handler: _lazy_alhIrf, lazy: true, middleware: false, method: "patch" },
-  { route: '/api/subCategoria', handler: _lazy_aiGrp2, lazy: true, middleware: false, method: "get" },
-  { route: '/api/subCategoria', handler: _lazy_UPp9nN, lazy: true, middleware: false, method: "post" },
-  { route: '/api/usuarios/:id', handler: _lazy_dYUt8v, lazy: true, middleware: false, method: "patch" },
-  { route: '/api/usuarios/cambiarPassUsuario', handler: _lazy_QdZDqn, lazy: true, middleware: false, method: undefined },
-  { route: '/api/usuarios', handler: _lazy_ppP7Zk, lazy: true, middleware: false, method: "get" },
-  { route: '/api/usuarios', handler: _lazy_LQpxyo, lazy: true, middleware: false, method: "post" },
-  { route: '/__nuxt_error', handler: _lazy_9HkuKp, lazy: true, middleware: false, method: undefined },
-  { route: '/api/_auth/session', handler: _iI8R57, lazy: false, middleware: false, method: "delete" },
-  { route: '/api/_auth/session', handler: _Tty72v, lazy: false, middleware: false, method: "get" },
-  { route: '/**', handler: _lazy_9HkuKp, lazy: true, middleware: false, method: undefined }
+  { route: '', handler: _xw6Oza, lazy: false, middleware: true, method: undefined },
+  { route: '/api/alertas', handler: _lazy_Irph24, lazy: true, middleware: false, method: "get" },
+  { route: '/api/auth/cambiarPass', handler: _lazy_vXHFUu, lazy: true, middleware: false, method: undefined },
+  { route: '/api/auth/crear-cuenta', handler: _lazy_gdt0Vf, lazy: true, middleware: false, method: undefined },
+  { route: '/api/auth/login', handler: _lazy_9Ir05Z, lazy: true, middleware: false, method: undefined },
+  { route: '/api/categoria/:id', handler: _lazy_W9730v, lazy: true, middleware: false, method: "delete" },
+  { route: '/api/categoria/:id', handler: _lazy_DvUHv9, lazy: true, middleware: false, method: "patch" },
+  { route: '/api/categoria', handler: _lazy_Vwkxnc, lazy: true, middleware: false, method: "get" },
+  { route: '/api/categoria', handler: _lazy_Fk5zDG, lazy: true, middleware: false, method: "post" },
+  { route: '/api/estadoConservacion/:id', handler: _lazy_xXGWPa, lazy: true, middleware: false, method: "delete" },
+  { route: '/api/estadoConservacion/:id', handler: _lazy_CDCW5Z, lazy: true, middleware: false, method: "patch" },
+  { route: '/api/estadoConservacion', handler: _lazy_knDnMX, lazy: true, middleware: false, method: "get" },
+  { route: '/api/estadoConservacion', handler: _lazy_uKNbzk, lazy: true, middleware: false, method: "post" },
+  { route: '/api/estados', handler: _lazy_eu0CyY, lazy: true, middleware: false, method: undefined },
+  { route: '/api/exportarPdf/:id', handler: _lazy_Ckz5XS, lazy: true, middleware: false, method: "get" },
+  { route: '/api/fecha', handler: _lazy_4crMYl, lazy: true, middleware: false, method: undefined },
+  { route: '/api/idProducto', handler: _lazy_yClJUP, lazy: true, middleware: false, method: "get" },
+  { route: '/api/nivelEducativo/:id', handler: _lazy_2njpjV, lazy: true, middleware: false, method: "delete" },
+  { route: '/api/nivelEducativo/:id', handler: _lazy_cImE94, lazy: true, middleware: false, method: "patch" },
+  { route: '/api/nivelEducativo', handler: _lazy_tXBpxT, lazy: true, middleware: false, method: "get" },
+  { route: '/api/nivelEducativo', handler: _lazy_dAUOqF, lazy: true, middleware: false, method: "post" },
+  { route: '/api/procedencia/:id', handler: _lazy_f5dSr0, lazy: true, middleware: false, method: "delete" },
+  { route: '/api/procedencia/:id', handler: _lazy_q4QUYb, lazy: true, middleware: false, method: "patch" },
+  { route: '/api/procedencia', handler: _lazy_L0zpyE, lazy: true, middleware: false, method: "get" },
+  { route: '/api/procedencia', handler: _lazy_1OFEGX, lazy: true, middleware: false, method: "post" },
+  { route: '/api/productos/:id', handler: _lazy_ecHEMF, lazy: true, middleware: false, method: "delete" },
+  { route: '/api/productos/:id', handler: _lazy_oz4htm, lazy: true, middleware: false, method: "patch" },
+  { route: '/api/productos/agregarStock', handler: _lazy_fA17FC, lazy: true, middleware: false, method: "post" },
+  { route: '/api/productos/asignarResponsable/:id', handler: _lazy_TzzfBF, lazy: true, middleware: false, method: "patch" },
+  { route: '/api/productos/asignarResponsable', handler: _lazy_lNNVnt, lazy: true, middleware: false, method: "get" },
+  { route: '/api/productos/asignarResponsable', handler: _lazy_FaWihv, lazy: true, middleware: false, method: "post" },
+  { route: '/api/productos/asignarSala', handler: _lazy_PEubJv, lazy: true, middleware: false, method: "post" },
+  { route: '/api/productos/editar', handler: _lazy_JEqGrt, lazy: true, middleware: false, method: "get" },
+  { route: '/api/productos/filtrarSala/:id', handler: _lazy_JodVNe, lazy: true, middleware: false, method: "get" },
+  { route: '/api/productos/filtrarSala/filtrarSalaEditar/:id', handler: _lazy_q1t37x, lazy: true, middleware: false, method: "get" },
+  { route: '/api/productos', handler: _lazy_N5yFjW, lazy: true, middleware: false, method: "get" },
+  { route: '/api/productos', handler: _lazy_fS75f4, lazy: true, middleware: false, method: "post" },
+  { route: '/api/productos/nuevoProducto', handler: _lazy_MPtZqN, lazy: true, middleware: false, method: "post" },
+  { route: '/api/productos/obtenerProductosDevolucion/:id', handler: _lazy_URC6Ln, lazy: true, middleware: false, method: "get" },
+  { route: '/api/productos/obtenerProductosSelect', handler: _lazy_yJ9sfK, lazy: true, middleware: false, method: "get" },
+  { route: '/api/productos/obtenerProductosTotales', handler: _lazy_UstDGm, lazy: true, middleware: false, method: "get" },
+  { route: '/api/proveedores/:id', handler: _lazy_aWip3d, lazy: true, middleware: false, method: "delete" },
+  { route: '/api/proveedores/:id', handler: _lazy_rzNJGd, lazy: true, middleware: false, method: "patch" },
+  { route: '/api/proveedores', handler: _lazy_AECvVp, lazy: true, middleware: false, method: "get" },
+  { route: '/api/proveedores', handler: _lazy_qNffzh, lazy: true, middleware: false, method: "post" },
+  { route: '/api/reportes/obtenerTotales', handler: _lazy_DYtCbi, lazy: true, middleware: false, method: "get" },
+  { route: '/api/reportes/productoMasUtilizado', handler: _lazy_xDkwd0, lazy: true, middleware: false, method: "get" },
+  { route: '/api/reportes/productoResponsable', handler: _lazy_8HzzBo, lazy: true, middleware: false, method: "get" },
+  { route: '/api/reportes/productoSala', handler: _lazy_ddj6QK, lazy: true, middleware: false, method: "get" },
+  { route: '/api/roles', handler: _lazy_NCyhyl, lazy: true, middleware: false, method: undefined },
+  { route: '/api/salas/:id', handler: _lazy_LHm7LR, lazy: true, middleware: false, method: "delete" },
+  { route: '/api/salas/:id', handler: _lazy_VP0LAr, lazy: true, middleware: false, method: "patch" },
+  { route: '/api/salas', handler: _lazy_iFQqFo, lazy: true, middleware: false, method: "get" },
+  { route: '/api/salas', handler: _lazy_CWEdcA, lazy: true, middleware: false, method: "post" },
+  { route: '/api/subCategoria/:id', handler: _lazy_tH5Idz, lazy: true, middleware: false, method: "delete" },
+  { route: '/api/subCategoria/:id', handler: _lazy_i3g7fE, lazy: true, middleware: false, method: "patch" },
+  { route: '/api/subCategoria', handler: _lazy_xbztDl, lazy: true, middleware: false, method: "get" },
+  { route: '/api/subCategoria', handler: _lazy_C3WUBx, lazy: true, middleware: false, method: "post" },
+  { route: '/api/usuarios/:id', handler: _lazy_hlf23o, lazy: true, middleware: false, method: "patch" },
+  { route: '/api/usuarios/cambiarPassUsuario', handler: _lazy_dPMLhN, lazy: true, middleware: false, method: undefined },
+  { route: '/api/usuarios', handler: _lazy_BoEiSj, lazy: true, middleware: false, method: "get" },
+  { route: '/api/usuarios', handler: _lazy_hYKLA4, lazy: true, middleware: false, method: "post" },
+  { route: '/__nuxt_error', handler: _lazy_1RlprV, lazy: true, middleware: false, method: undefined },
+  { route: '/api/_auth/session', handler: _KPx4Io, lazy: false, middleware: false, method: "delete" },
+  { route: '/api/_auth/session', handler: _JmLQtM, lazy: false, middleware: false, method: "get" },
+  { route: '/**', handler: _lazy_1RlprV, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -6223,8 +6223,8 @@ const renderSSRHeadOptions = {"omitLineBreaks":true};
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
-const getClientManifest = () => import('file://C:/Users/11/Desktop/inventario/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
-const getServerEntry = () => import('file://C:/Users/11/Desktop/inventario/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getClientManifest = () => import('file://C:/Users/11/Documents/inventario/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getServerEntry = () => import('file://C:/Users/11/Documents/inventario/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRStyles = lazyCachedFunction(() => Promise.resolve().then(function () { return styles$1; }).then((r) => r.default || r));
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();

@@ -1,0 +1,147 @@
+generator client {
+    provider        = "prisma-client-js"
+    previewFeatures = ["omitApi"]
+}
+
+datasource db {
+    provider = "sqlite"
+    url      = env("DATABASE_URL")
+}
+
+model Proveedor {
+    idProveedor Int                 @id @default(autoincrement())
+    proveedor   String
+    email       String              @unique
+    telefono    String
+    productos   ProductoProveedor[]
+}
+
+model ProductoProveedor {
+    idProducto  Int
+    idProveedor Int
+    producto    Producto  @relation(fields: [idProducto], references: [idProducto])
+    proveedor   Proveedor @relation(fields: [idProveedor], references: [idProveedor])
+
+    @@id([idProducto, idProveedor]) // Llave compuesta
+}
+
+model Producto {
+    idProducto               Int      @id @default(autoincrement()) // ID único del producto
+    individualizacionDelBien String // Nombre del producto, por ejemplo 'computador logitech g345'
+    fechaAdquisicion         DateTime?
+    idProcedencia            Int
+    idEstado                 Int
+    idSubcategoria           Int
+    idUsuarioCreador         Int
+
+    procedencia  Procedencia        @relation(fields: [idProcedencia], references: [idProcedencia])
+    estado       EstadoConservacion @relation(fields: [idEstado], references: [idEstado])
+    subcategoria Subcategoria       @relation(fields: [idSubcategoria], references: [idSubcategoria])
+
+    usuarioCreador Usuario @relation("UsuarioCreador", fields: [idUsuarioCreador], references: [idUsuario])
+
+    productoProveedores ProductoProveedor[]
+    productoSalas       ProductoSala[]
+    responsables        ProductoResponsable[]
+}
+
+model ProductoResponsable {
+    idResponsable   Int      @id @default(autoincrement())
+    idProducto      Int
+    idUsuario       Int
+    fechaAsignacion DateTime
+    fechaDevolucion DateTime?
+    producto           Producto @relation(fields: [idProducto], references: [idProducto])
+    usuarioResponsable Usuario  @relation(fields: [idUsuario], references: [idUsuario])
+
+    @@index([idProducto]) // Índice para búsquedas más rápidas por producto
+}
+
+model ProductoSala {
+    idProducto      Int
+    idSala          Int
+    fechaAsignacion DateTime?
+    fechaDevolucion DateTime?
+    producto        Producto @relation(fields: [idProducto], references: [idProducto])
+    sala            Sala     @relation(fields: [idSala], references: [idSala])
+
+    @@id([idProducto, idSala]) // Llave compuesta
+}
+
+model Procedencia {
+    idProcedencia Int        @id @default(autoincrement())
+    procedencia   String
+    productos     Producto[]
+}
+
+model Subcategoria {
+    idSubcategoria     Int        @id @default(autoincrement())
+    nombreSubcategoria String
+    idCategoria        Int
+    categoria          Categoria  @relation(fields: [idCategoria], references: [idCategoria])
+    productos          Producto[]
+}
+
+model Categoria {
+    idCategoria     Int            @id @default(autoincrement())
+    nombreCategoria String
+    subcategorias   Subcategoria[]
+}
+
+model EstadoConservacion {
+    idEstado  Int        @id @default(autoincrement())
+    estado    String
+    productos Producto[]
+}
+
+model Usuario {
+    idUsuario       Int     @id @default(autoincrement())
+    nombre          String
+    apellido        String
+    contrasena      String
+    email           String  @unique
+    idEstadoUsuario Int
+
+    estadoUsuario EstadoUsuario @relation(fields: [idEstadoUsuario], references: [idEstadoUsuario])
+
+    productosCreados    Producto[]            @relation("UsuarioCreador")
+    usuarioRoles        UsuarioRol[]
+    ProductoResponsable ProductoResponsable[]
+}
+
+model UsuarioRol {
+    idUsuario Int
+    idRol     Int
+    usuario   Usuario @relation(fields: [idUsuario], references: [idUsuario])
+    rol       Rol     @relation(fields: [idRol], references: [idRol])
+
+    @@id([idUsuario, idRol]) // Llave primaria compuesta
+}
+
+model Rol {
+    idRol     Int          @id @default(autoincrement())
+    nombreRol String
+    usuarios  UsuarioRol[]
+}
+
+model EstadoUsuario {
+    idEstadoUsuario Int       @id @default(autoincrement())
+    estado          String
+    usuarios        Usuario[]
+}
+
+model Sala {
+    idSala         Int            @id @default(autoincrement())
+    numeroSala     Int
+    nombreSala     String
+    capacidad      Int
+    idNivel        Int
+    nivelEducativo NivelEducativo @relation(fields: [idNivel], references: [idNivel])
+    productos      ProductoSala[]
+}
+
+model NivelEducativo {
+    idNivel        Int    @id @default(autoincrement())
+    nivelEducativo String
+    salas          Sala[]
+}
