@@ -9,6 +9,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "db:seed": "prisma db seed",
+    "migrate": "prisma migrate deploy",
     "start": "node .output/server/index.mjs"
   },
   "dependencies": {
